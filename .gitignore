@@ -1,0 +1,6 @@
+/workspace/emlo2_s4_demo_class/__pycache__
+*/__pycache__
+/workspace/emlo2_s4_demo_class/flagged
+*/*/__pycache__
+*/*/flagged
+.gitpod.yml
