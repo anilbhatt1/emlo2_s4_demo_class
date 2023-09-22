@@ -40,5 +40,8 @@ def predict(inp_img: Image) -> Dict[str, float]:
     return confidences
 
 gr.Interface(
-    fn=predict, inputs=[gr.Image(type="pil")], outputs=gr.Label(num_top_classes=10)
+    fn=predict,
+    live=True,
+    inputs=gr.Image(source="webcam", streaming=True, type="pil"),
+    outputs=gr.Label(num_top_classes=10),
 ).launch(share=True)
